@@ -1,0 +1,11 @@
+version: '2'
+services:
+    puppeteer-lambda-chrome-build:
+        image: lambda-chrome
+        build: .
+        volumes:
+            - ./dist:/chrome
+        privileged: true
+
+
+
